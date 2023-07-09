@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Signatue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+}
+.container .email-signature{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    background: #222;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #000;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.container .email-signature .image img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #333;
+    position: relative;
+}
+.container .email-signature .image::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 70%;
+    height: 300px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    box-shadow: 20px 0 0 #2c3e50;
+
+}
+.container .email-signature .content{
+    padding-left: 60px;
+}
+.container .email-signature .content .nam{
+    text-align: center;
+    font-size: 25px;
+    color: #f0f0f0;
+}
+.container .email-signature .post{
+    font-size: 15px;
+    padding: 6px 0;
+    margin: 5px 30px;
+    border-radius: 50px;
+    background: #ccc;
+    color: #333;
+    text-align: center;
+}
+.container .email-signature .content .contact{
+    margin-top: 30px;
+    
+}
+.container .email-signature .content .contact li{ 
+    list-style-type: none;
+    margin: 10px 0;
+    color: #ccc;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.container .email-signature .content .contact li i{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background: #2c3e50;
+    margin-right: 10px;
+    color: #fff;
+}
+.container .email-signature .content .icons{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-flow: column;
+}
+.container .email-signature .content .icons a {
+    text-decoration: none;
+    height: 31px;
+    width: 31px;
+    line-height: 33px;
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: all linear .3s;
+}
+.container .email-signature .content .icons a:hover{
+    background: #333;
+}
+@media (max-width:768px){
+    .container .email-signature{
+        flex-flow: column;
+        width: 90%;
+    }
+    .container .email-signature .image::before{
+        width: 100%;
+        box-shadow: 0 15px 0 #2c3e50;
+        top: -25%;
+        left: 0;
+    }
+    .container .email-signature .content{
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .container .email-signature .content .contact li{
+        text-align: left;
+    }
+    .container .email-signature .content .icons{
+        top: 93%;
+        right: 0;
+        width: 100%;
+        flex-flow: row;
+        justify-content: center;
+    }
+    .container .email-signature .content .icons a{
+        margin: 0 5px;
+    }
+}
+    </style>
+    <div class="container">
+
+        <div class="email-signature">
+            <div class="image">
+                <img src="images/ssss.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1 class="nam">MD Sobur Khan</h1>
+                <h3 class="post">Web designer / developer</h3>
+                <ul class="contact">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+8801 7188 57576</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>soburkhan210@gmail.com</li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>West Shewrapara,Mirpur Dhaka-1216</li>
+                </ul>
+                <div class="icons">
+                    <a href="https://www.facebook.com/Sk2441139/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/SoburKh75612427"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/sk2441139"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Sobur11"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
